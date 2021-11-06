@@ -1,0 +1,5 @@
+name: AutoRenew
+version: '${project.version}'
+main: io.github.maple8192.autorenew.AutoRenew
+api-version: 1.17
+softdepend: [ KotlinPluginLib ]
