@@ -14,6 +14,8 @@ class ToolBrokeEvent : Listener {
         // 壊れたアイテムが防具だったら無視する
         if (item.type.isTool.not()) return
 
+        val isMainHand = player.inventory.getItem(player.inventory.heldItemSlot) == item
+
         // 壊れたアイテムをインベントリから消去
         player.inventory.setItem(player.inventory.heldItemSlot, null)
 
@@ -23,7 +25,7 @@ class ToolBrokeEvent : Listener {
         // 取り替えられるアイテムがインベントリ内に見つかったら
         if (alternativeItemSlot != -1) {
             // 壊れたアイテムがメインハンドかオフハンドかを判定
-            if (player.inventory.getItem(player.inventory.heldItemSlot) == item) {
+            if (isMainHand) {
                 // メインハンドだったら
 
                 // 手持ちのアイテムと取り替え
