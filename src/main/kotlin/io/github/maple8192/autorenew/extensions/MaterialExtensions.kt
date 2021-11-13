@@ -1,4 +1,4 @@
-package io.github.maple8192.autorenew.listeners.extensions
+package io.github.maple8192.autorenew.extensions
 
 import org.bukkit.Material
 

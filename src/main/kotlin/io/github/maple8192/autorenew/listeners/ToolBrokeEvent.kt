@@ -1,6 +1,6 @@
 package io.github.maple8192.autorenew.listeners
 
-import io.github.maple8192.autorenew.listeners.extensions.isTool
+import io.github.maple8192.autorenew.extensions.isTool
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerItemBreakEvent
